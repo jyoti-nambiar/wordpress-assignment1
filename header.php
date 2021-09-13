@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Labb 1</title>
+
 
     <?php wp_head(); ?>
 </head>
@@ -51,7 +51,14 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <ul class="menu">
-                            <?php wp_nav_menu(); ?>
+                            <?php wp_nav_menu(
+                                array(
+                                    'menu' => 'primary',
+                                    'container' => '',
+                                    'theme_location' => 'primary'
+                                )
+
+                            ); ?>
                         </ul>
                     </div>
                 </div>
