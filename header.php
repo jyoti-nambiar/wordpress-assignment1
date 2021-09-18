@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
 
-
+    <!-- wp_head hooks in stylesheet from function.php -->
     <?php wp_head(); ?>
 </head>
 

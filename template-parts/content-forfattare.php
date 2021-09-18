@@ -1,7 +1,4 @@
-<?php /* Template Name: forfattare */
-get_header();
-
-?>
+<?php get_header(); ?>
 
 <main>
     <section>
@@ -126,5 +123,9 @@ get_header();
         </div>
     </section>
 </main>
+
+
+
+
 
 <?php get_footer(); ?>
