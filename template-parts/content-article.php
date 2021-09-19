@@ -4,7 +4,7 @@
               <div class="row">
                   <div id="primary" class="col-xs-12 col-md-9">
                       <article>
-                          <img src="<?php the_post_thumbnail(); ?>" />
+                          <?php the_post_thumbnail(); ?>
                           <h1 class="title"><?php the_title();    ?></h1>
                           <ul class="meta">
                               <li>

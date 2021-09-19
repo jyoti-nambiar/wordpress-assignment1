@@ -21,7 +21,7 @@ get_header();
                             $post_query->the_post();
                     ?>
                             <article>
-                                <img src="<?php the_post_thumbnail(); ?>" />
+                                <?php the_post_thumbnail(); ?>
                                 <h2 class="title">
                                     <a href="<?php the_permalink();   ?>"><?php the_title(); ?></a>
                                 </h2>
@@ -32,10 +32,10 @@ get_header();
                                         <i class="fa fa-calendar"></i> <?php the_date();  ?>
                                     </li>
                                     <li>
-                                        <i class="fa fa-user"></i> <a href="<?php echo get_template_directory_uri() . './author.php';   ?>"><?php the_author();    ?></a>
+                                        <i class="fa fa-user"></i> <a href=""><?php the_author_posts_link(); ?></a>
                                     </li>
                                     <li>
-                                        <i class="fa fa-tag"></i> <a href="<?php echo get_template_directory_uri() . '/category.php' ?>"><?php the_tags(); ?></a>
+                                        <i class="fa fa-tag"></i> <a href="<?php echo get_template_directory_uri() . '/category.php' ?>"><?php the_category(); ?></a>
                                     </li>
                                 </ul>
                             </article>
@@ -53,7 +53,7 @@ get_header();
                         <a class="next page-numbers" href="">Nästa</a>
                     </nav>
                 </div>
-                <?php get_sidebar(); ?>
+                <?php get_sidebar()  ?>
 
             </div>
         </div>
